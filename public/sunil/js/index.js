@@ -1,8 +1,8 @@
-var app  = angular.module("myapp", ['ngRoute']);
+var app  = angular.module("myapp", ['ngRoute','ngMessages']);
 
 app.config(function($routeProvider){
     $routeProvider
-        .when("/first", {
+        .when("/", {
             "templateUrl" : "first.html",
             "controller" : "default"
         })
